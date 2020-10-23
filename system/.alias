@@ -1,2 +1,4 @@
 alias ll="ls -la"
 
+alias mytmux="tmux new-session \; send-keys 'cd ~/backend' C-m \; split-window -v \; send-keys 'cd ~/frontend' C-m \; new-window \; send-keys 'cd ~/backend' C-m \; split-window -h \; send-keys 'top' C-m \; split-window -v \; send-keys 'ctop -a' C-m \; select-pane -t 0 \;"
+
