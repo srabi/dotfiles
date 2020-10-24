@@ -82,11 +82,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# source all my dotfiles
-for f in $(find ${HOME}/dotfiles/system -type f -name ".*")
-do
-    . $f
-done
+source ${HOME}/dotfiles/.alias
 
 . system/sync_history.sh
 
